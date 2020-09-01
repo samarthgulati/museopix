@@ -15,14 +15,15 @@
   </style>
 </head>
 <body>
-  <!-- Import the component -->
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
-<!-- Use it like any other HTML element -->
+<!-- skybox from http://photopin.com -->
 <model-viewer src="./assets/buddha/BuddhaPhotoScan.glb" 
           ios-src="./assets/buddha/BuddhaPhotoScan.usdz" 
-     skybox-image="./assets/skybox.jpg"
+     skybox-image="./assets/skybox-museum.jpg"
               alt="A photo scanned model of Buddha" 
-              auto-rotate camera-controls></model-viewer>
+              ar ar-modes="webxr scene-viewer quick-look" 
+              quick-look-browsers="safari chrome"
+              ar-scale="auto" camera-controls></model-viewer>
 </body>
 </html>
